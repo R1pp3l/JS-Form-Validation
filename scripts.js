@@ -27,3 +27,14 @@ confirmPasswordInput.setCustomValidity("Please enter the password again");
 confirmPasswordInput.addEventListener("input", () => {
   confirmPasswordInput.setCustomValidity("");
 });
+
+function validatePassword() {
+  if (passwordInput.value !== confirmPasswordInput.value) {
+    confirmPasswordInput.setCustomValidity("Password do not match!");
+  } else {
+    confirmPasswordInput.setCustomValidity("");
+  }
+}
+
+passwordInput.addEventListener("input", validatePassword);
+confirmPasswordInput.addEventListener("input", validatePassword);
