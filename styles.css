@@ -68,6 +68,11 @@ body {
   padding: 0.5em;
 }
 
+.inputs:invalid {
+  border: 2px solid red;
+  background-color: ivory;
+}
+
 .forms {
   font-family: "PT Sans", sans-serif;
   font-weight: bold;
