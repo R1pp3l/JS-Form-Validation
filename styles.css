@@ -63,6 +63,7 @@ body {
 #country,
 .inputs {
   border-radius: 3px;
+  background-color: white;
   border: 2px solid #dbdbdb;
   padding: 0.5em;
 }
